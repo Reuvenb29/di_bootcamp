@@ -1,0 +1,11 @@
+# Step 1: Ask for user input
+x = int(input("Enter the Number: "))
+
+# Step 2: Find the sum of divisors (excluding the number itself)
+divisors_sum = sum(i for i in range(1, x) if x % i == 0)
+
+# Step 3: Check if the number is perfect
+is_perfect = divisors_sum == x
+
+# Step 4: Print the result
+print(is_perfect)
