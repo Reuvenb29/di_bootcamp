@@ -1,30 +1,30 @@
-import random  # Import shuffle function for the bonus step
+import re
 
-# Step 1: Ask the user for a string of exactly 10 characters
-user_input = input("Enter a string of exactly 10 characters: ")
+# Exercise: Define the matrix as a 2D list
+matrix = [
+    ['7', 'i', 'i'],
+    ['T', 's', 'x'],
+    ['h', '%', '?'],
+    ['i', ' ', '#'],
+    ['s', 'M', ' '],
+    ['$', 'a', ' '],
+    ['#', 't', '%'],
+    ['^', 'r', '!']
+]
 
-# Step 2: Check the length of the string
-if len(user_input) < 10:
-    print("String not long enough.")
-elif len(user_input) > 10:
-    print("String too long.")
-else:
-    print("Perfect string!")
+# Step 1: Read column by column
+rows = len(matrix)
+cols = len(matrix[0])
 
-    # Step 3: Print the first and last characters
-    print("\nFirst and last character:")
-    print(user_input[0])  # First character
-    print(user_input[-1])  # Last character
+decoded_text = ""
 
-    # Step 4: Print the string character by character
-    print("\nBuilding the string character by character:")
-    for i in range(1, len(user_input) + 1):
-        print(user_input[:i])  # Print progressively longer substrings
+for col in range(cols):
+    for row in range(rows):
+        decoded_text += matrix[row][col]
 
-    # Bonus: Shuffle the string and print it
-    shuffled_string = list(user_input)  # Convert string to list
-    random.shuffle(shuffled_string)  # Shuffle the characters
-    shuffled_string = ''.join(shuffled_string)  # Convert list back to string
+# Step 2: Replace non-alphabetic groups between letters with a space
+clean_text = re.sub(r'[^a-zA-Z]+', ' ', decoded_text)
 
-    print("\nJumbled string:")
-    print(shuffled_string)
+# Step 3: Trim unnecessary spaces and print the message
+decoded_message = clean_text.strip()
+print(decoded_message)
