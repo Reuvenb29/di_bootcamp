@@ -1,4 +1,4 @@
-# --- Exercise 
+# --- Exercise 1
 # currency ---
 class Currency:
     def __init__(self, currency, amount):
