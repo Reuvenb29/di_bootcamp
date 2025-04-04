@@ -24,16 +24,15 @@ class Text:
         return cls(text)
 
 if __name__ == "__main__":
-    # Part I (commented out for now)
-    '''
+    # Part I (comment out as neccersary for testing)
+   
     print("--- Hardcoded Text Test ---")
     text = Text("A good book would sometimes cost as much as a good house.")
     print("Frequency of 'good':", text.word_frequency("good"))
     print("Most common word:", text.most_common_word())
     print("Unique words:", text.unique_words())
-    '''
 
-    # Part II – Analysis from external file
+    # Part II 
     print("\n--- The Stranger Text Analysis ---")
     stranger = Text.from_file("the_stranger.txt")
     print("Frequency of 'the':", stranger.word_frequency("the"))
