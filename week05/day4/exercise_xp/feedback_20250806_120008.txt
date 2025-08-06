@@ -1,0 +1,11 @@
+URL: URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week05/day4/exercise_xp/exercise_1.sql
+suggestions for improvement:
+- Add comments to explain the purpose of each section of the code more thoroughly.  For example, a comment before each query explaining what the query is doing would enhance readability.
+- Consider using more descriptive variable names if this were to be expanded.  `items` and `customers` are fine for this small example, but for larger projects, more descriptive names would improve readability.
+Correctness: 100%
+-----
+URL: URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week05/day4/exercise_xp/exercise_2.sql
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----

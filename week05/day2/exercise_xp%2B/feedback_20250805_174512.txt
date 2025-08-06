@@ -1,0 +1,11 @@
+URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week05/day2/exercise_xp%2B/exercise_xp%2B.sql
+suggestions for improvement:
+- The date format in the sample data (e.g., 02/11/1998) is inconsistent with the SQL DATE format used in the INSERT statement.  Use a consistent YYYY-MM-DD format throughout.
+- The placeholder birth date for the added student record ('199X-XX-XX') should be replaced with an actual date.  Consider using a more robust approach to handle user input for personal data if this were a production system.
+- Add comments to explain the purpose of each SQL statement for better readability.  While existing comments are helpful for the database setup, inline comments within each query would enhance understanding.
+Brief justification:
+- correctness: The code accurately creates the database, table, and inserts data as specified in the chapter content.  All the SELECT queries correctly address the stated requirements; the only minor issue is the inconsistent date format. The exercise requests to add personal data, the code complies.  The score is reduced slightly due to the placeholder date and inconsistent date formatting in the sample data.
+- readability: The code is well-structured and easy to follow. The use of comments to explain each SQL statement would be an improvement. The consistent use of uppercase for keywords and appropriate spacing enhances readability, but inline comments would make it even better.
+- performance: The code uses efficient SQL queries for data retrieval and insertion. The use of `ILIKE` for case-insensitive pattern matching and `IN` for multiple ID checks is appropriate and performs well.
+- security: There are no apparent security vulnerabilities in the provided code.  However, in a production environment, parameterized queries should be used to prevent SQL injection vulnerabilities when handling user inputs, especially for personal data like birth dates.
+

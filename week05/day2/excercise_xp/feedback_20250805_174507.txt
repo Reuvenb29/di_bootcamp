@@ -1,0 +1,13 @@
+URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week05/day2/excercise_xp/exercise_xp.sql
+suggestions for improvement:
+- No code was provided to assess. The chapter outlines a SQL exercise involving database creation, table population, and data retrieval, but no code implementing these tasks is included.
+- The response should include SQL code that creates the `public` database, the `items` and `customers` tables with appropriate columns, inserts the data as specified in the exercise, and executes the SELECT queries to retrieve the requested data.
+- The code should be structured logically and clearly, with comments explaining the purpose of different sections.
+- Error handling should be included to gracefully manage potential issues such as database connection errors or invalid SQL queries.
+- The solution should demonstrate efficient SQL queries and avoid unnecessary operations.
+Brief justification:
+- correctness: The correctness score is 0 because no code was provided.  The chapter explicitly asks for SQL code to create a database, tables, insert data, and retrieve data based on various criteria.  Without any code, there's nothing to assess for correctness against the stated chapter requirements.
+- readability: A readability score cannot be given as no code is present. Readability would be assessed based on proper formatting, naming conventions, and comments in the SQL code.
+- performance: No performance assessment is possible without the code.  The performance would be judged by the efficiency of the SQL queries used, avoiding unnecessary complexity or resource consumption.
+- security: Security cannot be assessed without code. Secure coding practices in SQL, such as parameterized queries to prevent SQL injection vulnerabilities, would be evaluated if code was provided.
+
