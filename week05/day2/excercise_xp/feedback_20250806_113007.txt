@@ -1,0 +1,11 @@
+URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week05/day2/excercise_xp/exercise_xp.sql
+suggestions for improvement:
+- Add comments to each query explaining what it's intended to achieve.
+- Consider using more descriptive names for columns (e.g., `item_id`, `customer_id`, `first_name`, `last_name`).
+- For larger datasets, explore using indexes to improve query performance, although this is not strictly necessary for this small example.
+Brief justification:
+- correctness: The code perfectly addresses all the requirements outlined in the chapter content.  It creates the specified tables (`items`, `customers`), inserts the correct data into those tables, and executes all six SQL queries exactly as described in Exercise 1.  Each query directly corresponds to a specific data retrieval request in the exercise. The SQL statements accurately retrieve and filter data based on the given criteria.
+- readability: The code is well-structured and easy to follow.  The use of comments would slightly enhance readability, especially for the queries. While the column names are functional, more descriptive names could improve understanding at a glance.
+- performance: For this small dataset, the performance is excellent.  The queries are simple and efficient.  There are no obvious performance bottlenecks.  No optimization is needed for this small scale.
+- security: The code does not involve any security-sensitive operations, so there are no security concerns.  The use of parameterized queries (though not strictly necessary here because of the simple inserts) would be a good practice for larger applications to prevent SQL injection vulnerabilities.
+
