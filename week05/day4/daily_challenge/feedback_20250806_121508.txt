@@ -1,0 +1,11 @@
+URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week05/day4/daily_challenge/daily_challenge.sql
+suggestions for improvement:
+- The code is well-structured and easy to follow.  Adding comments to explain the purpose of each query would further enhance readability.
+- For better performance, especially with larger datasets, consider adding indexes to the `id` columns in both tables.  The `NOT IN` clause with subqueries can be inefficient; explore alternatives like `LEFT JOIN` and `IS NULL` for improved performance.
+- While the code is secure in its current form,  in a real-world application, parameterized queries should be used to prevent SQL injection vulnerabilities. This is not applicable to this particular exercise as we are explicitly using set values.
+Brief justification:
+- correctness: The code correctly creates the tables, inserts the data, and executes the four SQL queries as specified in the problem description. The expected outputs for each query (Q1-Q4) are accurately calculated and align perfectly with the chapter's focus on SQL basics and table relationships.  Each query directly addresses the relationship between the `FirstTab` and `SecondTab` tables using `NOT IN` with subqueries, demonstrating an understanding of SQL operations.
+- readability: The code is well-formatted and uses clear variable names.  While comments are minimal, the code is largely self-explanatory.  Adding comments to the queries would improve clarity and make it even easier to understand the intent behind each step.
+- performance: The performance of the code is acceptable for small datasets, but for larger tables, the `NOT IN` subquery can become inefficient.  The use of indexes would significantly improve performance, and exploring alternative query structures, like `LEFT JOIN`s, could provide substantial performance gains.  The current implementation is adequate for this specific problem, but for scaling, optimization is necessary.
+- security: The code does not contain any security vulnerabilities in this specific context.  However, in production environments, parameterized queries should always be used to prevent SQL injection attacks.  Since this example uses explicit values, the risk is nonexistent, but it's crucial to establish secure coding practices. 
+
