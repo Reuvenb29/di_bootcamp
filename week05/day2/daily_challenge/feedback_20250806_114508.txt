@@ -1,0 +1,11 @@
+URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week05/day2/daily_challenge/actors.sql
+suggestions for improvement:
+- The provided code is missing.  The assessment requires code that addresses the instructions to count actors in the 'actors' table and attempts to add a new actor with blank fields.  No such code was provided.
+- Add SQL code to count the rows in the 'actors' table (e.g., `SELECT COUNT(*) FROM actors;`).
+- Add SQL code to attempt insertion with NULL values (e.g., `INSERT INTO actors (first_name, last_name) VALUES (NULL, NULL);` and observe the outcome based on your database constraints).
+Brief justification:
+- correctness: The correctness is 0% because no code was provided to answer the questions in the chapter content. The chapter explicitly asks to count actors and attempt insertion with blank fields. Without code addressing these tasks, the correctness cannot be assessed.
+- readability: Readability is rated 100% because there is no code to assess for readability issues.  This is a placeholder score.
+- performance: Performance is rated 100% because there is no code to assess for performance issues.  This is a placeholder score.
+- security: Security is rated 100% because there is no code to assess for security vulnerabilities.  This is a placeholder score.
+

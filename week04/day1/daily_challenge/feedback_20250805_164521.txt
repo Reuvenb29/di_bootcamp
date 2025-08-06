@@ -1,0 +1,7 @@
+URL: URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week04/day1/daily_challenge/cards.py
+suggestions for improvement:
+- The `_build_deck` method is called within `shuffle`.  It's more efficient to only call it once in the constructor. The shuffle method should shuffle the existing deck, not rebuild it every time. This wastes resources. 
+- Consider adding error handling or a check for empty deck in the `deal` method.  The current implementation returns a string; a more robust approach might raise an exception or return None.
+- Add docstrings to the methods to improve readability and explain their purpose.
+Correctness: 95%
+-----
