@@ -1,0 +1,14 @@
+URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week06/day2/daily_challenge/api_to_db.py
+suggestions for improvement:
+- Improve error handling for database operations.  Currently, only a generic `Exception` is caught. More specific exception handling would be beneficial for debugging and user feedback.
+- Sanitize user inputs (although there are none directly in this script, it's good practice).
+- Add more robust logging to track successes and failures during API calls and database interactions.
+- Consider using a connection pool for better database performance, especially under heavy load.
+- The `normalize` function could benefit from more robust error handling for cases where expected keys are missing from the API response.
+- Use parameterized queries for all database interactions to prevent SQL injection vulnerabilities.
+Brief justification:
+- correctness: The code accurately fetches data from the REST Countries API, normalizes it, and inserts 10 random countries into a PostgreSQL database. It creates the table if it doesn't exist and handles duplicate entries.  It directly addresses all aspects of the chapter content regarding web APIs and database interaction. The minor deduction is due to the lack of comprehensive error handling, which is crucial for production-ready code.
+- readability: The code is generally well-structured and easy to follow.  However, some improvements could be made to variable naming and function comments to further enhance readability.
+- performance: The code's performance is reasonably good for this task.  However, using a connection pool for database interactions and optimizing the query could improve performance for larger datasets or higher frequencies of access.  Fetching all countries before sampling also impacts efficiency; it would be better to fetch only the required number directly from the API if feasible.
+- security: The code has some security vulnerabilities. Hardcoding database credentials is a major risk.  While it uses `ON CONFLICT DO NOTHING` to prevent duplicate entries, parameterized queries should be used consistently to prevent SQL injection vulnerabilities.  The current level of error handling is also insufficient for production code, and thorough logging is needed to audit actions.
+
