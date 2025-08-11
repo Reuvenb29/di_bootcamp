@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS Menu_Items (
+    item_id    SERIAL PRIMARY KEY,
+    item_name  VARCHAR(30) NOT NULL UNIQUE,
+    item_price SMALLINT NOT NULL DEFAULT 0
+);
