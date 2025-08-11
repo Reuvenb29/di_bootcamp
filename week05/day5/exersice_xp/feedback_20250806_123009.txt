@@ -1,0 +1,8 @@
+URL: URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week05/day5/exersice_xp/exercise_1.sql
+suggestions for improvement:
+- The code lacks error handling.  What happens if a language_id or film_id referenced in a review doesn't exist?  Consider adding checks or using `ON DELETE SET NULL` instead of `ON DELETE CASCADE` to handle potential issues during deletion more gracefully.
+- Improve comments to explain the purpose of each section more thoroughly. For instance, before Step 4, a comment like `-- Step 4: Get films and their languages using JOIN` would make the code more readable.
+- Add more robust input validation, especially for the `customer_review` table.  Sanitize user inputs to prevent SQL injection vulnerabilities.
+- The `customer_review` table's `last_update` column automatically updates on insert but it could be explicitly updated on any data modification for better accuracy.
+Correctness: 95%
+-----
