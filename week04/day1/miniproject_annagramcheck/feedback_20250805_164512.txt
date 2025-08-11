@@ -1,0 +1,16 @@
+URL: URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week04/day1/miniproject_annagramcheck/anagram_checker.py
+suggestions for improvement:
+- The `sowpods.txt` file should be checked for existence before attempting to open it.  Handle the `FileNotFoundError` exception gracefully.
+- The `get_anagrams` function could be optimized for better performance with larger word lists. Consider using a more efficient data structure like a Trie or hash table to store and search for anagrams.
+- Add more comprehensive error handling for invalid user input in `anagrams.py` (not provided).
+- Improve the user interface in `anagrams.py` (not provided) to be more robust and user-friendly. Consider using a library to create a more visually appealing menu.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week04/day1/miniproject_annagramcheck/anagrams.py
+suggestions for improvement:
+- The `anagram_checker.py` file is missing, preventing a complete assessment of correctness.  The provided `anagrams.py` file seems to correctly implement the UI and input validation as specified.
+- Improve error handling.  Instead of just printing 'Invalid input...', provide more specific feedback (e.g., 'Input contains numbers', 'Input contains more than one word').
+- The performance could be improved by optimizing the anagram search algorithm in `anagram_checker.py` (which is missing).  Consider using more efficient data structures or algorithms for finding anagrams.
+- Add comprehensive docstrings to the functions in both files to improve readability and understanding.
+Correctness: 95%
+-----

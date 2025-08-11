@@ -1,0 +1,16 @@
+URL: URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week04/day1/miniproject_annagramcheck/anagram_checker.py
+suggestions for improvement:
+- The `anagram_checker.py` file assumes `sowpods.txt` is in the same directory.  It should handle potential `FileNotFoundError` exceptions more gracefully (e.g., by providing a user-friendly error message or allowing the user to specify the file path).
+- The `get_anagrams` function converts the input word to uppercase for checking but then converts the results back to lowercase for returning. It's more consistent to return the results as all uppercase or all lowercase to match the user input.
+- Performance could be improved by using a more efficient data structure than a list for the `word_list`. A set would allow for O(1) lookup time instead of O(n) for `is_valid_word`.
+- Add more comprehensive error handling to `anagrams.py`.  For example, gracefully handle cases where the file `sowpods.txt` cannot be opened or processed.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week04/day1/miniproject_annagramcheck/anagrams.py
+suggestions for improvement:
+- The `AnagramChecker` class (in the missing `anagram_checker.py` file) needs to be implemented to fully satisfy the requirements.  The provided `anagrams.py` correctly handles user input validation and interacts with the `AnagramChecker` class as specified, assuming the class functions correctly.
+- Error handling could be improved by providing more specific error messages to the user (e.g., indicating *why* the input is invalid, rather than just 'Invalid input').
+- Consider adding a progress indicator or feedback to the user if the anagram search takes a long time for very large word lists or complex inputs.
+- The performance could be significantly improved by using more efficient algorithms for anagram detection (e.g., sorting letters instead of nested loops).
+Correctness: 90%
+-----

@@ -1,0 +1,16 @@
+URL: URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week05/day5/daily_challenge/part1.sql
+suggestions for improvement:
+- The code for Part I is well-structured and mostly addresses the requirements.  However,  the instruction to insert Lea Rive's profile is missing.
+- Consider adding error handling (e.g., using `TRY...CATCH` blocks) for potential issues like duplicate entries or foreign key constraints during inserts.
+- In Part II,  the SQL for creating the `Student` table doesn't enforce the age constraint in a way that is typically considered best practice (using CHECK constraint).
+- Add comments to Part II explaining the purpose of each step. The code is functional, but more explanation would improve readability.
+Correctness: 95%
+-----
+URL: URL: https://github.com/Reuvenb29/di_bootcamp/blob/main/week05/day5/daily_challenge/part2.sql
+suggestions for improvement:
+- The use of subqueries in the `INSERT` statements for the `library` table is not ideal for performance. It's more efficient to join the tables directly or use a single `INSERT` statement with values derived from a `SELECT` query that combines the `book` and `student` tables. The current solution executes a `SELECT` statement for each row inserted.
+- Add indexes to foreign key columns in `library` table (`book_fk_id`, `student_fk_id`) to speed up joins.
+- Improve readability by using more descriptive variable and table names. For example `book_fk_id` can be improved to `book_id`
+- The comments could be more specific about what each code block is doing, especially the last block that shows the effects of the ON DELETE CASCADE.
+Correctness: 95%
+-----
